@@ -13,6 +13,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
+  width: 100%;
+}
+
+#root{
+  width: 100%;
 }
 
 html {
