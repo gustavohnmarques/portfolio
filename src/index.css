@@ -12,9 +12,38 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
 }
 
 html {
   scroll-behavior: smooth;
   width: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  line-height: 1.6;
+  color: rgb(227, 232, 240);
+  background: rgb(15, 23, 42);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
