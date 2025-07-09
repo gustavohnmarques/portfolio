@@ -36,19 +36,19 @@ const Navbar: React.FC = () => {
                     variants={fadeInUp}                    
                     whileTap={{ scale: 0.95 }}
                 >
-                    <a href="#inicio"> Início </a>
+                    <a href="#home"> Início </a>
                 </S.NavLinkItem>
                 <S.NavLinkItem
                     variants={fadeInUp}                    
                     whileTap={{ scale: 0.95 }}
                 >
-                    <a href="#projetos"> Projetos</a>
+                    <a href="#projects"> Projetos</a>
                 </S.NavLinkItem>
                 <S.NavLinkItem
                     variants={fadeInUp}                    
                     whileTap={{ scale: 0.95 }}
                 >
-                    <a href="#contato"> Contato</a>
+                    <a href="#contacts"> Contato</a>
                 </S.NavLinkItem>
             </S.NavLinks>
         </S.MotionContainer>
