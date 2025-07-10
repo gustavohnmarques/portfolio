@@ -7,7 +7,7 @@ import Contact from "../../components/Contact/Contact";
 
 const Home: React.FC = () => {
   return (
-    <S.Container>
+    <S.Container>        
         <Navbar />
         <Hero />
         <Projects />
