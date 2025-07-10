@@ -1,15 +1,7 @@
 import * as S from "./Projects.styles";
 import handIconUrl from "../../assets/hand.svg";
-import integralmenteImage from "../../assets/images/projects/integramente-studioa-capa.webp";
 import { Suspense, useCallback, useState } from "react";
 import ModalProjectDetails from "../ModalProjectDetails/ModalProjectDetails";
-import imagem1 from "../../assets/images/projects/imagem1.webp";
-import imagem2 from "../../assets/images/projects/imagem2.webp";
-import imagem3 from "../../assets/images/projects/imagem3.webp";
-import imagem4 from "../../assets/images/projects/imagem4.webp";
-import imagem5 from "../../assets/images/projects/imagem5.webp";
-import imagem6 from "../../assets/images/projects/imagem6.webp";
-import imagem7 from "../../assets/images/projects/imagem7.webp";
 import type { Project } from "../../types/Project.stypes";
 import dedent from "dedent";
 
@@ -48,17 +40,17 @@ const projects: Project[] = [
             - **Formulários**: React Hook Form, Yup
             - **Estilização**: Emotion, ThemeProvider
         `,
-        image: integralmenteImage,
+        image: '/projects/integramente-studioa/integramente-studioa-capa.webp',
         techStack: ["Vite", "TypeScript", "MUI", "ApexCharts"],
         gallery: [
             { src: 'https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/8182e86841e5768410cf8cd703019da1/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F8182e86841e5768410cf8cd703019da1%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%235872e5', type: 'video' },
-            { src: imagem1, type: 'image' },
-            { src: imagem2, type: 'image' },
-            { src: imagem3, type: 'image' },
-            { src: imagem4, type: 'image' },
-            { src: imagem5, type: 'image' },
-            { src: imagem6, type: 'image' },
-            { src: imagem7, type: 'image' },
+            { src: '/projects/integramente-studioa/imagem1.webp', type: 'image' },
+            { src: '/projects/integramente-studioa/imagem2.webp', type: 'image' },
+            { src: '/projects/integramente-studioa/imagem3.webp', type: 'image' },
+            { src: '/projects/integramente-studioa/imagem4.webp', type: 'image' },
+            { src: '/projects/integramente-studioa/imagem5.webp', type: 'image' },
+            { src: '/projects/integramente-studioa/imagem6.webp', type: 'image' },
+            { src: '/projects/integramente-studioa/imagem7.webp', type: 'image' },
         ],
         developedFor: "IntegraMente - StudioA",
     },
@@ -83,8 +75,9 @@ const Projects: React.FC = () => {
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
                 onClick={() => handleCardClick(index)}
             >
+                
                 <S.ProjectImage
-                    style={{ backgroundImage: `url('${project.image}')` }}
+                    style={{ backgroundImage: `url('${import.meta.env.VITE_BUCKET_URL}${project.image}')` }}
                     whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                 />
                 <h3>{project.title}</h3>

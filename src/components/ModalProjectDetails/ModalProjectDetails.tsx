@@ -41,7 +41,7 @@ const ModalProjectDetails: React.FC<ModalProjectDetailsProps> = ({ onRequestClos
         return gallery.map((item, index) => (
             <SwiperSlide key={index}>
                 {item.type === 'image' ? (
-                    <img src={item.src} style={{ width: '100%', borderRadius: '8px', height: '350px', objectFit: 'contain' }} />
+                    <img src={import.meta.env.VITE_BUCKET_URL + item.src} style={{ width: '100%', borderRadius: '8px', height: '350px', objectFit: 'contain' }} />
                 ) : (
                     <iframe
                         style={{ width: '99%', height: '350px', borderRadius: '8px' }}
@@ -64,7 +64,7 @@ const ModalProjectDetails: React.FC<ModalProjectDetailsProps> = ({ onRequestClos
                 onClick={() => goToSlide(index)}
                 activeIndex={activeSlide === index}
             >
-                {item.type == "image" ? <img src={item.src} /> : <i className="fa-solid fa-play"></i>}
+                {item.type == "image" ? <img src={import.meta.env.VITE_BUCKET_URL + item.src} /> : <i className="fa-solid fa-play"></i>}
             </S.Indicator>
         ))
     }, [gallery, activeSlide]);
