@@ -43,7 +43,7 @@ const projects: Project[] = [
         image: '/projects/integramente-studioa/integramente-studioa-capa.webp',
         techStack: ["Vite", "TypeScript", "MUI", "ApexCharts"],
         gallery: [
-            { src: 'https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/8182e86841e5768410cf8cd703019da1/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F8182e86841e5768410cf8cd703019da1%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%235872e5', type: 'video' },
+            { src: 'https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/8182e86841e5768410cf8cd703019da1/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F8182e86841e5768410cf8cd703019da1%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%23ae83f6', type: 'video' },
             { src: '/projects/integramente-studioa/imagem1.webp', type: 'image' },
             { src: '/projects/integramente-studioa/imagem2.webp', type: 'image' },
             { src: '/projects/integramente-studioa/imagem3.webp', type: 'image' },
@@ -54,7 +54,40 @@ const projects: Project[] = [
         ],
         developedFor: "IntegraMente - StudioA",
     },
+    {
+        title: "Waymenu",
+        description: "Waymenu  uma plataforma de cardápio digital responsivo desenvolvida para restaurantes, lanchonetes e estabelecimentos...",
+        detailDescription: dedent`
+            **WayMenu** é uma plataforma de cardápio digital responsivo desenvolvida para restaurantes, lanchonetes e estabelecimentos que desejam oferecer uma experiência moderna e personalizada aos seus clientes. O sistema permite montagem de pedidos interativos, autenticação segura e customização visual conforme a identidade do cliente.
 
+            ## Características principais:
+
+            - Montagem interativa de pizzas com divisão dinâmica de fatias em SVG (até 4 partes) e animação via Framer Motion
+            - Gerenciamento de cardápio, carrinho e sessão do usuário com Context API e hooks customizados
+            - Formulários com validação via React Hook Form e Yup, incluindo orientação UX para campos obrigatórios e limites de seleção
+            - Feedback de ações com React Toastify e tratamento de erros em chamadas HTTP com Axios
+
+            ## Tecnologias utilizadas:
+
+            - **Frontend**: Vite, TypeScript, React, MUI
+            - **Gerenciamento de estado**: Context API, hooks customizados            
+            - **Formulários**: React Hook Form, Yup
+            - **Estilização**: Emotion, ThemeProvider
+        `,
+        image: '/projects/waymenu/waymenu-capa.webp',
+        techStack: ["Vite", "TypeScript", "MUI", "Framer Motion"],
+        gallery: [
+            { src: 'https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/a3e6ef8520fae81831bbaa81c8058dc8/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2Fa3e6ef8520fae81831bbaa81c8058dc8%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%23f09400', type: 'video' },
+            { src: '/projects/waymenu/imagem1.webp', type: 'image' },
+            { src: '/projects/waymenu/imagem2.webp', type: 'image' },
+            { src: '/projects/waymenu/imagem3.webp', type: 'image' },
+            { src: '/projects/waymenu/imagem4.webp', type: 'image' },
+            { src: '/projects/waymenu/imagem5.webp', type: 'image' },
+            { src: '/projects/waymenu/imagem6.webp', type: 'image' },
+            { src: '/projects/waymenu/imagem7.webp', type: 'image' },
+        ],
+        developedFor: "Grupo Sifat",
+    },
 ]
 
 
@@ -75,7 +108,7 @@ const Projects: React.FC = () => {
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
                 onClick={() => handleCardClick(index)}
             >
-                
+
                 <S.ProjectImage
                     style={{ backgroundImage: `url('${import.meta.env.VITE_BUCKET_URL}${project.image}')` }}
                     whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
