@@ -88,6 +88,39 @@ const projects: Project[] = [
         ],
         developedFor: "Grupo Sifat",
     },
+    {
+        title: "Totem Menu Builder",
+        description: "Totem Menu Builder é uma ferramenta de construção de cardápios interativos voltada para totens de autoatendimento. O projeto nasceu de uma necessidade...",
+        detailDescription: dedent`
+            **Totem Menu Builder** é uma ferramenta de construção de cardápios interativos voltada para totens de autoatendimento. O projeto nasceu de uma necessidade da empresa de permitir a customização dos cardápios de clientes diretamente nos totens, respeitando as particularidades de cada estabelecimento. A solução foi desenvolvida dentro do sistema ERP já existente, garantindo integração total e refletindo em tempo real as configurações feitas pelos usuários.
+
+            ## Características principais:
+
+            - Interface drag & drop para ordenação de menus, produtos e regras de exibição por horário
+            - Painel split-view com configurações visuais detalhadas: fontes, cores, bordas, ícones e imagens
+            - Pré-visualização instantânea das alterações com layout responsivo e renderização fiel ao totem
+            - Controle granular da aparência: número de produtos por linha, estilo de fundo, tipografia e bordas
+            - Upload de imagens e escolha de ícones via modais com validação e feedback em tempo real
+
+            ## Tecnologias utilizadas:
+
+            - **Frontend**: ReactJS, React-Grid-Layout, Framer Motion
+            - **Gerenciamento de estado**: Context API, hooks customizados                        
+            - **Upload & UI**: Modais customizados, validação de arquivos, preview instantâneo
+        `,
+        image: '/projects/totem-builder/totem-builder-capa.webp',
+        techStack: ["ReactJS", "React-Grid-Layout", "Framer Motion"],
+        gallery: [
+            { src: 'https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/1b57527f0be6d10b281960796d2ef501/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F1b57527f0be6d10b281960796d2ef501%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%23cb3434', type: 'video' },
+            { src: '/projects/totem-builder/imagem1.webp', type: 'image' },
+            { src: '/projects/totem-builder/imagem2.webp', type: 'image' },
+            { src: '/projects/totem-builder/imagem3.webp', type: 'image' },
+            { src: '/projects/totem-builder/imagem4.webp', type: 'image' },
+            { src: '/projects/totem-builder/imagem5.webp', type: 'image' },
+            { src: '/projects/totem-builder/imagem6.webp', type: 'image' },            
+        ],
+        developedFor: "Grupo Sifat",
+    },
 ]
 
 
