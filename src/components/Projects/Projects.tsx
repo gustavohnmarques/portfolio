@@ -153,6 +153,46 @@ const projects: Project[] = [
         ],
         developedFor: "Grupo Sifat",
     },
+        {
+        title: "App População",
+        description: "App População é um aplicativo de atendimento ao cidadão desenvolvido com React Native e publicado na Play Store e App Store, permitindo que moradores realizem solicitações...",
+        detailDescription: dedent`
+            **App População** é um aplicativo de atendimento ao cidadão desenvolvido com React Native e publicado na Play Store e App Store, permitindo que moradores realizem solicitações de serviços públicos diretamente pelo celular, de forma rápida, intuitiva e com acompanhamento em tempo real.
+
+            ## Características principais:
+
+            - Envio de solicitações de serviços públicos (iluminação, limpeza, manutenção, entre outros), com endereço, descrição e foto
+            - Captura automática de localização via GPS e integração com mapas HERE para precisão no envio da solicitação
+            - Lista de solicitações realizadas pelo usuário, com status atualizado em tempo real
+            - Notificações push com OneSignal para alertas de mudanças no status das solicitações
+            - Navegação por menu lateral (drawer), com seções de serviços, histórico de solicitações e conta do usuário
+            - Armazenamento de dados offline com SQLite e controle de sessão com Async Storage
+            - Upload de imagens direto da câmera, com redimensionamento e validação de formatos
+            - Integração com a API do Google Vision para detecção de conteúdo pornográfico e gore
+
+            ## Tecnologias utilizadas:
+
+            - **Frontend**: React Native
+            - **Notificações**: OneSignal
+            - **Localização**: GPS, HERE Maps
+            - **Armazenamento**: SQLite, Async Storage
+            - **Upload & Imagem**: react-native-vision-camera, react-native-image-resizer
+            - **Validação de Conteúdo**: Google Vision API
+            - **Outros**: Axios, Moment.js, React Native Permissions
+        `,
+        image: '/projects/populacao/populacao-capa.webp',
+        techStack: ["React Native", "OneSignal", "react-native-vision-camera"],
+        gallery: [
+            { src: 'https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/5a7869e8a17e778307861bb5ed519d32/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F5a7869e8a17e778307861bb5ed519d32%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%23258757', type: 'video' },
+            { src: '/projects/populacao/imagem1.webp', type: 'image' },
+            { src: '/projects/populacao/imagem2.webp', type: 'image' },
+            { src: '/projects/populacao/imagem3.webp', type: 'image' },
+            { src: '/projects/populacao/imagem4.webp', type: 'image' },
+            { src: '/projects/populacao/imagem5.webp', type: 'image' },
+            { src: '/projects/populacao/imagem6.webp', type: 'image' },
+        ],
+        developedFor: "Prefeitura de José Bonifácio-SP - BrasilApp",
+    },
 ]
 
 
