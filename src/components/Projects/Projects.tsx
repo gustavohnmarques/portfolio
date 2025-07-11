@@ -117,7 +117,39 @@ const projects: Project[] = [
             { src: '/projects/totem-builder/imagem3.webp', type: 'image' },
             { src: '/projects/totem-builder/imagem4.webp', type: 'image' },
             { src: '/projects/totem-builder/imagem5.webp', type: 'image' },
-            { src: '/projects/totem-builder/imagem6.webp', type: 'image' },            
+            { src: '/projects/totem-builder/imagem6.webp', type: 'image' },
+        ],
+        developedFor: "Grupo Sifat",
+    },
+    {
+        title: "Dashboard Dinâmico",
+        description: "Dashboard Dinâmico é um módulo de visualização de dados personalizado desenvolvido dentro do ERP do cliente, permitindo que cada usuário monte seu próprio painel...",
+        detailDescription: dedent`
+            **Dashboard Dinâmico** é um módulo de visualização de dados personalizado desenvolvido dentro do ERP do cliente, permitindo que cada usuário monte seu próprio painel com indicadores, gráficos e tabelas em tempo real, de acordo com suas necessidades operacionais e estratégicas.
+
+            ## Características principais:
+
+            - Interface drag & drop para seleção, organização e redimensionamento de cards e gráficos
+            - Cards configuráveis com diferentes tipos de conteúdo: gráficos simples, barras, linhas, pizza e textos estáticos
+            - Biblioteca Chart.js para renderização de gráficos interativos com atualizações em tempo real
+            - Filtros avançados por período, tipo de dado e parâmetros personalizados com atualização dinâmica via API
+            - Criação de múltiplos dashboards adaptados a áreas como faturamento, financeiro, produtos e filiais
+            - Otimizações de performance com lazy loading de módulos e memorização de componentes de gráficos
+
+            ## Tecnologias utilizadas:
+
+            - **Frontend**: ReactJS, React-Grid-Layout, Chart.js, Framer Motion
+            - **Gerenciamento de estado**: Context API, hooks customizados                        
+            - **Performance**: Lazy loading, memoização de componentes
+        `,
+        image: '/projects/dashboard/dashboard-capa.webp',
+        techStack: ["ReactJS", "React-Grid-Layout", "Chart.js", "Framer Motion"],
+        gallery: [
+            { src: 'https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/0310e98d0c99c7092ea54f33b56104e2/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F0310e98d0c99c7092ea54f33b56104e2%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%2310405c', type: 'video' },
+            { src: '/projects/dashboard/imagem1.webp', type: 'image' },
+            { src: '/projects/dashboard/imagem2.webp', type: 'image' },
+            { src: '/projects/dashboard/imagem3.webp', type: 'image' },
+            { src: '/projects/dashboard/imagem4.webp', type: 'image' },
         ],
         developedFor: "Grupo Sifat",
     },
