@@ -193,7 +193,7 @@ const projects: Project[] = [
         ],
         developedFor: "Prefeitura de José Bonifácio-SP - BrasilApp",
     },
-        {
+    {
         title: "Prefeitura web",
         description: "Prefeitura web é um sistema de gestão desenvolvido para administração de solicitações públicas recebidas via aplicativo da população. Integrado ao App População...",
         detailDescription: dedent`
@@ -232,6 +232,45 @@ const projects: Project[] = [
             { src: '/projects/prefeitura/imagem6.webp', type: 'image' },
         ],
         developedFor: "Prefeitura de José Bonifácio-SP - BrasilApp",
+    },
+        {
+        title: "Admin Studio – GEL / UNESP",
+        description: "Admin Studio – GEL / UNESP é um sistema completo para gestão de seminários acadêmicos, desenvolvido em PHP com MySQL. Voltado tanto para organizadores quanto para participantes...",
+        detailDescription: dedent`
+            **Admin Studio – GEL / UNESP** é um sistema completo para gestão de seminários acadêmicos, desenvolvido em PHP com MySQL. Voltado tanto para organizadores quanto para participantes, ele oferece recursos robustos para gerenciamento de inscrições, submissões de trabalhos, controle financeiro e comunicação com usuários.
+
+            ## Características principais:
+
+            - Painel administrativo para criação e gerenciamento de seminários, incluindo modalidades, instituições, categorias, programação e relatórios
+            - Gestão de usuários com filtros avançados por status, categoria, atuação, anuidade, nacionalidade e situação
+            - Sistema de inscrições com avaliação de trabalhos, submissão de coautores, download de documentos e controle de status
+            - Integração com PagSeguro via checkout transparente com retorno automático de pagamento
+            - Geração de boletos, recibos e comprovantes em PDF com MPDF
+            - Portal do usuário com painel de controle para atualização de dados, envio de trabalhos, comprovantes, recibos e histórico
+            - Editor de publicações e banners para divulgação de eventos no site oficial
+            - Mais de 2.000 inscrições e **12.000** usuários cadastrados, oferecendo insights em tempo real sobre engajamento e alcance dos eventos
+
+            ## Tecnologias utilizadas:
+
+            - **Frontend**: HTML, CSS, JavaScript
+            - **Backend**: PHP, CI (CodeIgniter)
+            - **Pagamentos**:  Integração com PagSeguro (checkout transparente com resposta automática)            
+            - **Relatórios**: MPDF
+            - **Banco de dados**: MySQL      
+            - **Painéis**: Admin e Usuário
+        `,
+        image: '/projects/gel/gel-capa.webp',
+        techStack: ["PHP", "CodeIgniter", "MPDF", "PagSeguro", "MySQL"],
+        gallery: [                        
+            { src: '/projects/gel/imagem1.webp', type: 'image' },
+            { src: '/projects/gel/imagem2.webp', type: 'image' },
+            { src: '/projects/gel/imagem3.webp', type: 'image' },
+            { src: '/projects/gel/imagem4.webp', type: 'image' },
+            { src: '/projects/gel/imagem5.webp', type: 'image' },
+            { src: '/projects/gel/imagem6.webp', type: 'image' },
+            { src: '/projects/gel/imagem7.webp', type: 'image' },
+        ],
+        developedFor: "GEL / UNESP – StudioA",
     },
 ]
 
@@ -295,7 +334,7 @@ const Projects: React.FC = () => {
                     whileInView="animate"
                     viewport={{ once: true }}
                 >
-                    Meus Projetos
+                    Um pouco do que já construí
                 </S.Title>
                 <S.ProjectGrid
                     variants={variants}
