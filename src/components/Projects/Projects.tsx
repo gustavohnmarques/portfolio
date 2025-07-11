@@ -153,7 +153,7 @@ const projects: Project[] = [
         ],
         developedFor: "Grupo Sifat",
     },
-        {
+    {
         title: "App População",
         description: "App População é um aplicativo de atendimento ao cidadão desenvolvido com React Native e publicado na Play Store e App Store, permitindo que moradores realizem solicitações...",
         detailDescription: dedent`
@@ -190,6 +190,46 @@ const projects: Project[] = [
             { src: '/projects/populacao/imagem4.webp', type: 'image' },
             { src: '/projects/populacao/imagem5.webp', type: 'image' },
             { src: '/projects/populacao/imagem6.webp', type: 'image' },
+        ],
+        developedFor: "Prefeitura de José Bonifácio-SP - BrasilApp",
+    },
+        {
+        title: "Prefeitura web",
+        description: "Prefeitura web é um sistema de gestão desenvolvido para administração de solicitações públicas recebidas via aplicativo da população. Integrado ao App População...",
+        detailDescription: dedent`
+            **Prefeitura web** é um sistema de gestão desenvolvido para administração de solicitações públicas recebidas via aplicativo da população. Integrado ao **App População**, permite à equipe da prefeitura acompanhar, tratar e responder às demandas da cidade com agilidade, segurança e rastreabilidade.
+
+            ## Características principais:
+
+            - Painel completo de controle de solicitações públicas com filtros por status, categoria, data e palavra-chave
+            - Gestão de administradores e colaboradores com definição de permissões por módulo
+            - Interface moderna com painel estatístico, gráficos dinâmicos com Chart.js e relatórios por período
+            - Visualização detalhada de cada solicitação, com histórico, dados do solicitante, imagem e subcategoria
+            - Criação de mensagens prontas para facilitar comunicação com a população
+            - Autenticação em duas etapas com Google Authenticator e tokens JWT para segurança avançada
+            - Geração de relatórios em PDF com MPDF e envio automático de e-mails com PHPMailer
+            - Envio de notificações push para o App População via integração com a API do OneSignal
+
+            ## Tecnologias utilizadas:
+
+            - **Frontend**: HTML, CSS, JavaScript
+            - **Backend**: PHP, CI (CodeIgniter)
+            - **Segurança**: JWT, Google Authenticator
+            - **Gráficos**: Chart.js
+            - **Notificações**: OneSignal
+            - **Relatórios**: MPDF
+            - **Banco de dados**: MySQL            
+        `,
+        image: '/projects/prefeitura/prefeitura-capa.webp',
+        techStack: ["PHP", "CodeIgniter", "MPDF", "OneSignal", "MySQL"],
+        gallery: [
+            { src: 'https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/25769f022f519629768865793c64dd86/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F25769f022f519629768865793c64dd86%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%230665d0', type: 'video' },
+            { src: '/projects/prefeitura/imagem1.webp', type: 'image' },
+            { src: '/projects/prefeitura/imagem2.webp', type: 'image' },
+            { src: '/projects/prefeitura/imagem3.webp', type: 'image' },
+            { src: '/projects/prefeitura/imagem4.webp', type: 'image' },
+            { src: '/projects/prefeitura/imagem5.webp', type: 'image' },
+            { src: '/projects/prefeitura/imagem6.webp', type: 'image' },
         ],
         developedFor: "Prefeitura de José Bonifácio-SP - BrasilApp",
     },
