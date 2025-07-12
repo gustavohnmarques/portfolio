@@ -233,8 +233,8 @@ const projects: Project[] = [
         ],
         developedFor: "Prefeitura de José Bonifácio-SP - BrasilApp",
     },
-        {
-        title: "Admin Studio – GEL / UNESP",
+    {
+        title: "Admin Studio",
         description: "Admin Studio – GEL / UNESP é um sistema completo para gestão de seminários acadêmicos, desenvolvido em PHP com MySQL. Voltado tanto para organizadores quanto para participantes...",
         detailDescription: dedent`
             **Admin Studio – GEL / UNESP** é um sistema completo para gestão de seminários acadêmicos, desenvolvido em PHP com MySQL. Voltado tanto para organizadores quanto para participantes, ele oferece recursos robustos para gerenciamento de inscrições, submissões de trabalhos, controle financeiro e comunicação com usuários.
@@ -271,6 +271,45 @@ const projects: Project[] = [
             { src: '/projects/gel/imagem7.webp', type: 'image' },
         ],
         developedFor: "GEL / UNESP – StudioA",
+    },
+    {
+        title: "Wayservice",
+        description: "Wayservice é uma aplicação desenvolvida em Flutter para Android e Windows, criada para atuar como o software principal dos totens de autoatendimento.",
+        detailDescription: dedent`
+            **Wayservice** é uma aplicação desenvolvida em Flutter para Android e Windows, criada para atuar como o software principal dos totens de autoatendimento. Ela é responsável por reproduzir de forma fiel e interativa os cardápios personalizados construídos no **Totem Menu Builder**, garantindo uma experiência fluida, moderna e totalmente customizável para o cliente final.
+
+            ## Características principais:
+
+            - Renderização fiel do cardápio criado no painel administrativo, com suporte a layouts, cores e estilos personalizados
+            - Suporte completo a produtos com adicionais, observações e opções de customização
+            - Carrinho integrado com controle de itens, quantidades e totais
+            - Animações suaves com Lottie e transições visuais usando flutter_animate
+            - Suporte a mídias nos produtos: imagens e vídeos com reprodução via video_player
+            - Interface otimizada para touch, com layout responsivo e navegação intuitiva
+            - Gerenciamento eficiente de estado com GetX            
+
+            ## Tecnologias utilizadas:
+
+            - **Framework**: Flutter
+            - **Plataformas**: Android e Windows
+            - **Gerenciamento de estado**:  GetX
+            - **UI e Animações**: Lottie, flutter_animate, font_awesome_flutter
+            - **Mídias**: video_player (suporte a imagens e vídeos nos produtos)      
+            - **Outros**: Componentes customizados e integração direta com o cardápio gerado via Totem Menu Builder
+        `,
+        image: '/projects/wayservice/wayservice-capa.webp',
+        techStack: ["Flutter", "GetX", "Lottie", "FontAwesome", "video_player"],
+        gallery: [
+            { src: 'https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/973f993d66dc6aaaf6ca2236cdd67bfb/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F973f993d66dc6aaaf6ca2236cdd67bfb%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%23904747', type: 'video' },
+            { src: '/projects/wayservice/imagem1.webp', type: 'image' },
+            { src: '/projects/wayservice/imagem2.webp', type: 'image' },
+            { src: '/projects/wayservice/imagem3.webp', type: 'image' },
+            { src: '/projects/wayservice/imagem4.webp', type: 'image' },
+            { src: '/projects/wayservice/imagem5.webp', type: 'image' },
+            { src: '/projects/wayservice/imagem6.webp', type: 'image' },
+            { src: '/projects/wayservice/imagem7.webp', type: 'image' },
+        ],
+        developedFor: "Grupo Sifat",
     },
 ]
 
