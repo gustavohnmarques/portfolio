@@ -1,23 +1,27 @@
 import * as S from "./Navbar.styles";
+import { useTranslation } from 'react-i18next'
 
 const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
 };
 
 const variants = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
+    animate: {
+        transition: {
+            staggerChildren: 0.1,
+        },
     },
-  },
 };
 
 
 const Navbar: React.FC = () => {
+
+    const { t, i18n } = useTranslation()
+
     return (
-        <S.MotionContainer            
+        <S.MotionContainer
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -27,28 +31,40 @@ const Navbar: React.FC = () => {
                 <span className="second-word">Marques</span>
             </S.Logo>
 
-            <S.NavLinks                
+            <S.NavLinks
                 variants={variants}
                 initial="initial"
                 animate="animate"
             >
                 <S.NavLinkItem
-                    variants={fadeInUp}                    
+                    variants={fadeInUp}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <a href="#home"> Início </a>
+                    <a href="#home"> {t('header.home')} </a>
                 </S.NavLinkItem>
                 <S.NavLinkItem
-                    variants={fadeInUp}                    
+                    variants={fadeInUp}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <a href="#projects"> Projetos</a>
+                    <a href="#projects"> {t('header.projects')}</a>
                 </S.NavLinkItem>
                 <S.NavLinkItem
-                    variants={fadeInUp}                    
+                    variants={fadeInUp}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <a href="#contacts"> Contato</a>
+                    <a href="#contacts"> {t('header.contactMe')}</a>
+                </S.NavLinkItem>
+
+                <S.NavLinkItem
+                    variants={fadeInUp}
+                    whileTap={{ scale: 0.95 }}
+                >                    
+                    {i18n.language === 'pt' ? (
+                        <button onClick={() => i18n.changeLanguage('en')}>EN</button>
+                    ) : (
+                        <button onClick={() => i18n.changeLanguage('pt')}>PT</button>
+                    )}
+                                                    
                 </S.NavLinkItem>
             </S.NavLinks>
         </S.MotionContainer>

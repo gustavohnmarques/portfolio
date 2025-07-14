@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import * as S from "./Contact.styles";
 
 const fadeInUp = {
@@ -7,6 +8,9 @@ const fadeInUp = {
 };
 
 const Contact: React.FC = () => {
+
+    const { t } = useTranslation()
+
     return (
         <S.MotionContainer
             id="contacts"
@@ -16,15 +20,15 @@ const Contact: React.FC = () => {
         >
 
             <S.Title variants={fadeInUp}>
-                Vamos conversar?
+                {t('footer.title')}
             </S.Title>
 
             <S.SubTitle variants={fadeInUp}>
-                Estou sempre aberto a novas oportunidades e colaborações. Se você tem uma ideia, projeto ou apenas quer trocar uma ideia, sinta-se à vontade para entrar em contato!
+                {t('footer.subtitle')}
             </S.SubTitle>
 
-            <S.SocialLink><a href="mailto:gustavohnmarques@gmail.com" target="_blank">📧 E-mail: gustavohnmarques@gmail.com</a></S.SocialLink>
-            <S.SocialLink><a href="https://wa.me/5517991640256" target="_blank">📱 WhatsApp: (17) 9 99164-0256</a></S.SocialLink>
+            <S.SocialLink><a href="mailto:gustavohnmarques@gmail.com" target="_blank">{t('footer.email')}</a></S.SocialLink>
+            <S.SocialLink><a href="https://wa.me/5517991640256" target="_blank">{t('footer.whatsapp')}</a></S.SocialLink>
 
         </S.MotionContainer>
     )

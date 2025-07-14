@@ -2,7 +2,7 @@ import * as S from "./Projects.styles";
 import handIconUrl from "../../assets/hand.svg";
 import { Suspense, useCallback, useState } from "react";
 import ModalProjectDetails from "../ModalProjectDetails/ModalProjectDetails";
-import type { Project } from "../../types/Project.stypes";
+import type { Project } from "../../types/Project.types";
 import dedent from "dedent";
 
 const fadeInUp = {

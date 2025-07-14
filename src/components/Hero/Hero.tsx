@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import * as S from "./Hero.styles";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import pretty from 'json-stringify-pretty-compact'
 
 const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -16,27 +18,17 @@ const variants = {
     },
 };
 
-const json = `const aboutMe: DeveloperProfile = {
-  codename: "GustavoMarques",  
-  role: "Desenvolvedor Fullstack",
-  stack: {
-    linguagens: ["JavaScript", "TypeScript", "PHP"],
-    frontend: ["ReactJS", "React Native", "Flutter", "Vite"],
-    backend: ["Node.js", "Docker", "MySQL", "Redis"],
-    ferramentas: ["GitHub", "Firebase", "OneSignal","Linux", "Nginx"],
-  },
-  características: [
-    "guerreiro freelancer",    
-    "viciado em animações",
-    "defensor do modo escuro",
-    "integrador supremo de APIs",
-    "ninja do terminal Linux",
-    "quebrador de galhos profissional",
-  ],
-    disponibilidade: "Aberto para novos desafios",
-};`
-
 const Hero: React.FC = () => {
+
+    const { t } = useTranslation()
+
+    const aboutMe = t('aboutMe', { returnObjects: true });
+    const codeString = pretty(aboutMe, {
+        indent: 2,
+        maxLength: 80 
+    })
+
+
     return (
         <S.MotionContainer
             id="home"
@@ -51,11 +43,10 @@ const Hero: React.FC = () => {
                     animate="animate"
                 >
                     <S.Subtitle variants={fadeInUp}>
-                        {" "}
-                        Criador de Soluções Fullstack
+                        {t('hero.title')}
                     </S.Subtitle>
                     <S.Description variants={fadeInUp}>
-                        Com mais de 7 anos de experiência entregando 🚀 soluções escaláveis e performáticas para 📱 web e mobile, com forte atuação como freelancer em projetos diversos.
+                        {t('hero.subtitle')}
                     </S.Description>
 
                     <S.CallToAction variants={variants}>
@@ -64,15 +55,14 @@ const Hero: React.FC = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            {" "}
-                            Ver projetos
+                            {t('hero.buttons.viewProjects')}
                         </S.MyWorkButton>
                         <S.ContactButton
                             href="#contacts"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            Fale comigo
+                            {t('hero.buttons.contactMe')}
                         </S.ContactButton>
                     </S.CallToAction>
                     <S.SocialLinks variants={variants}>
@@ -104,7 +94,7 @@ const Hero: React.FC = () => {
                             }}
                             style={vscDarkPlus}
                         >
-                            {json}
+                            {`const aboutMe: DeveloperProfile = ${codeString};`}
                         </SyntaxHighlighter>
                     </S.CodeDisplay>
                 </S.HeroImageContainer>
