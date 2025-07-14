@@ -107,7 +107,7 @@ const ModalProjectDetails: React.FC<ModalProjectDetailsProps> = ({ onRequestClos
                             {renderIdicators}
                         </S.SwiperIndicators>
                     </S.GalleryContainer>
-                    <S.DevelopedFor>Desenvolvido para: {developedFor}</S.DevelopedFor>
+                    <S.DevelopedFor>{developedFor}</S.DevelopedFor>
                     <S.ProjectDescription>
                         <Markdown>{detailDescription}</Markdown>
                     </S.ProjectDescription>
