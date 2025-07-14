@@ -90,6 +90,10 @@ export const NavLinkItem = styled(motion.li)`
         width: 100%;
     }
 
+    i {
+        font-size: 1.2rem;
+    }
+
 `
 
 export const LanguageButton = styled.button`
@@ -108,7 +112,7 @@ export const LanguageButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     &:hover {
         background: rgba(255, 255, 255, 0.1);
         border-color: rgba(255, 255, 255, 0.3);
@@ -119,7 +123,56 @@ export const LanguageButton = styled.button`
         object-fit: contain;
         width: 20px;
     }
+`
 
+export const MobileMenuOverlay = styled(motion.div)`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+`;
 
- 
+export const MobileMenu = styled(motion.div)`
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    background: rgb(30, 41, 59);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1.2em;
+    gap: 1.5rem;
+`;
+
+export const CloseIcon = styled.i`
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: rgb(148, 163, 184);
+`;
+
+export const NavLinksMobile = styled(motion.ul)`
+    display: flex;
+    flex-direction: column;      
+    gap: 2rem;
+    list-style: none;
+    padding: 0 0.7em; 
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: rgb(88, 145, 229);
+        transition: width 0.3s ease;
+    }
 `
