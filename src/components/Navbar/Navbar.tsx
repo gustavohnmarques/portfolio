@@ -1,5 +1,7 @@
 import * as S from "./Navbar.styles";
 import { useTranslation } from 'react-i18next'
+import imagePt from '../../assets/images/pt.png'
+import imageEn from '../../assets/images/en.png'
 
 const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -58,13 +60,19 @@ const Navbar: React.FC = () => {
                 <S.NavLinkItem
                     variants={fadeInUp}
                     whileTap={{ scale: 0.95 }}
-                >                    
+                >
                     {i18n.language === 'pt' ? (
-                        <button onClick={() => i18n.changeLanguage('en')}>EN</button>
+                        <S.LanguageButton onClick={() => i18n.changeLanguage('en')}>
+                            <img src={imageEn} alt="English" />
+                            EN
+                        </S.LanguageButton>
                     ) : (
-                        <button onClick={() => i18n.changeLanguage('pt')}>PT</button>
+                        <S.LanguageButton onClick={() => i18n.changeLanguage('pt')}>
+                            <img src={imagePt} alt="Português" />
+                            PT
+                        </S.LanguageButton>
                     )}
-                                                    
+
                 </S.NavLinkItem>
             </S.NavLinks>
         </S.MotionContainer>

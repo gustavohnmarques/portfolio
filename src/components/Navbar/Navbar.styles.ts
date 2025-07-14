@@ -91,3 +91,35 @@ export const NavLinkItem = styled(motion.li)`
     }
 
 `
+
+export const LanguageButton = styled.button`
+    background: transparent;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    backdrop-filter: blur(5px);
+    padding: 4px 0;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: .9em;
+    cursor: pointer;
+    min-width: 100px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+    }
+
+    img {
+        object-fit: contain;
+        width: 20px;
+    }
+
+
+ 
+`
