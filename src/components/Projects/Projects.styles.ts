@@ -13,6 +13,13 @@ export const Title = styled(motion.h2)`
     margin-bottom: 3rem;
 `
 
+export const Description = styled.p`
+    text-align: center;
+    color: rgb(148, 163, 184);
+    font-size: 1.125rem;
+    margin-bottom: 4rem;
+`
+
 export const ProjectGrid = styled(motion.div)`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -38,6 +45,15 @@ export const ProjectCard = styled(motion.div)`
         padding: 1.5rem 1.5rem 0.5rem;
         font-size: 1.5rem;
         color: rgb(226, 232, 240);
+    }
+
+    h4 {
+        padding: 0 1.5rem;
+        font-size: .85rem;
+        margin: 0;
+        color: rgba(113, 124, 139, 1);
+        font-style: italic;        
+
     }
 
     p {

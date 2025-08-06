@@ -51,6 +51,7 @@ const Projects: React.FC = () => {
                     whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                 />
                 <h3>{project.title}</h3>
+                <h4>{project.developedFor}</h4>
                 <p>{project.description}</p>
                 <S.ProjectTech>
                     {project.techStack.map((tech, idx) => (
@@ -90,6 +91,9 @@ const Projects: React.FC = () => {
                 >
                     {t('projects.title')}
                 </S.Title>
+                <S.Description>
+                    {t('projects.description')}
+                </S.Description>
                 <S.ProjectGrid
                     variants={variants}
                     initial="initial"

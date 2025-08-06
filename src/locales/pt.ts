@@ -35,7 +35,8 @@ export const pt = {
     availability: "Aberto para novos desafios",
   },
   projects: {
-    title: "Um pouco do que já construí",
+    title: "Aplicações entregues para uso comercial",
+    description: "Esses são projetos reais desenvolvidos sob medida para empresas e parceiros, com foco em atender necessidades específicas e entregar valor com tecnologia.",
     projects: [
       {
         id: "integramente",
@@ -372,7 +373,7 @@ export const pt = {
           { src: "/projects/gel/imagem6.webp", type: "image" },
           { src: "/projects/gel/imagem7.webp", type: "image" },
         ],
-        developedFor: "GEL / UNESP – StudioA",
+        developedFor: "Desenvolvido para: GEL / UNESP – StudioA",
       },
       {
         id: "wayservice",
