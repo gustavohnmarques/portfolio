@@ -1,69 +1,50 @@
-# React + TypeScript + Vite
+# 🚀 Portfólio - Gustavo Marques
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal desenvolvido para apresentar projetos e experiências como desenvolvedor fullstack, com foco em soluções web e mobile.
 
-Currently, two official plugins are available:
+## ✨ Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este portfólio foi criado para destacar projetos comerciais e pessoais desenvolvidos ao longo de mais de 7 anos de experiência. A aplicação apresenta uma interface moderna, responsiva e com animações fluidas, proporcionando uma experiência envolvente para visitantes.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
+- **React** - Biblioteca principal para construção da interface
+- **TypeScript** - Tipagem estática para maior robustez do código
+- **Vite** - Build tool moderna e performática
+- **Emotion** - CSS-in-JS para estilização dos componentes
+- **Framer Motion** - Biblioteca para animações e transições suaves
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Componentes e UI
+- **Swiper** - Carrosséis e galerias interativas
+- **React Markdown** - Renderização de conteúdo em Markdown
+- **React Image Gallery** - Visualização avançada de imagens
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Recursos Adicionais
+- **i18n** - Suporte a múltiplos idiomas (português/inglês)
+- **Responsive Design** - Layout adaptativo para todos os dispositivos
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🎨 Características
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Design Moderno**: Interface limpa com tema dark e gradientes
+- **Animações Fluidas**: Transições suaves entre seções e componentes
+- **Galeria Interativa**: Visualização de projetos com imagens e vídeos
+- **Modal Detalhado**: Descrições completas dos projetos com tecnologias utilizadas
+- **Responsivo**: Experiência otimizada para desktop, tablet e mobile
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📱 Seções
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Hero** - Apresentação inicial com call-to-actions
+2. **Sobre Mim** - Perfil profissional, stack tecnológica e características
+3. **Projetos Comerciais** - Aplicações desenvolvidas para empresas e parceiros
+4. **Projetos Pessoais** - Iniciativas próprias e experimentos
+5. **Contato** - Informações para networking e colaborações
+
+## 🔗 Links
+
+- **Portfolio**: [gustavomarques.dev](https://gustavomarques.dev)
+- **LinkedIn**: [linkedin.com/in/gustavo-marques-dev](https://linkedin.com/in/gustavo-marques-dev)
+- **GitHub**: [github.com/gustavohnmarques](https://github.com/gustavohnmarques)
+
+
+Desenvolvido com 💜 por [Gustavo Marques](https://github.com/gustavohnmarques)
