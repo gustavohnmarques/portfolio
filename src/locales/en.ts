@@ -429,6 +429,38 @@ export const en = {
         ],
         developedFor: "Developed for: Grupo Sifat",
       },
+      {
+        id: "crmConsudmir",
+        title: "CRM Consumidor",
+        description:
+          "CRM Consumidor is a web module built into the client’s ERP that centralizes the end-customer cashback experience. Anyone who places orders through Waymenu...",
+        detailDescription: dedent`
+            **CRM Consumidor** is a web module built into the client’s ERP that centralizes the end-customer cashback experience. Anyone who places orders through Waymenu, Wayservice (and other integrated channels such as Waypay) can create an account using the same CPF (Brazilian tax ID) used at purchase and then track balance, statements, benefit validity, and order history in a simple and secure way.
+
+            ## Características principais:
+
+            - Unified cashback view: current balance, recent transactions, originating store, benefit date, and status (active/expired).
+            - Order history: list of purchases linked to the CPF with key details for cashback auditing.
+            - My Wallet: add and validate payment methods (e.g., credit card) with data masking and validation rules (number, expiry, CVV).
+            - Multi-store: supports multiple brands/locations under a single account while respecting each program’s rules.      
+
+            ## Tecnologias utilizadas:
+
+            - **Frontend**: ReactJS, Framer Motion
+            - **State Management**: Context API, custom hooks
+            - **Performance**: Lazy loading, component memoization
+        `,
+        image: "/projects/crmConsumidor/crm-consumidor-capa.webp",
+        techStack: ["ReactJS", "Framer Motion"],
+        gallery: [
+          { src: "/projects/crmConsumidor/imagem1.webp", type: "image" },
+          { src: "/projects/crmConsumidor/imagem2.webp", type: "image" },
+          { src: "/projects/crmConsumidor/imagem3.webp", type: "image" },
+          { src: "/projects/crmConsumidor/imagem4.webp", type: "image" },
+          { src: "/projects/crmConsumidor/imagem5.webp", type: "image" },
+        ],
+        developedFor: "Desenvolvido para: Grupo Sifat",
+      },
     ],
   },
   personalProjects: {
