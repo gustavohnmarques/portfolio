@@ -431,6 +431,62 @@ export const en = {
       },
     ],
   },
+  personalProjects: {
+    title: "Personal Projects",
+    projects: [
+      {
+        id: "valorBitcoin",
+        title: "Valor do Bitcoin",
+        description:
+          "Valor do Bitcoin is a price tracker that aggregates Bitcoin and 100+ cryptocurrencies in near real time across leading Brazilian exchanges...",
+        detailDescription: dedent`
+            **Valor do Bitcoin** is a price tracker that aggregates Bitcoin and 100+ cryptocurrencies in near real time across leading Brazilian exchanges (e.g., Brasil Bitcoin, Bitnuvem, NovaDAX, OKX, Ripio, Coinext, Mercado Bitcoin, Bitget). The app consolidates BRL quotes, volume, and last-updated timestamps in one place, letting you quickly spot the best venue to buy or sell. It also offers customizable alerts by target price or percentage change, with the option to choose exactly which exchanges should trigger each alert.
+
+            ## Características principais:
+
+            - Multi-exchange aggregator: queries and displays quotes per exchange, including price, volume, and last-updated time
+            - Smart alerts: create price-target or % change (up/down) alerts and select the exchanges that should trigger them
+            - Push notifications when an alert is triggered.
+
+            ## Tecnologias utilizadas:
+
+            - **Framework**: React Native 
+            - **Navigation**: react-navigation
+            - **Local storage**: react-native-mmkv
+            - **Forms & validation**: react-hook-form, yup
+            - **Notifications**: react-native-onesignal
+            - **Others**: react-native-vector-icons, react-native-bootsplash, @react-native-community/checkbox
+
+            ## Backend & Architecture
+
+            -  **Framework**: Node.js + Express with Redis for caching and relational database for persistence.
+            -  **Data collection**: Jobs periodically query the APIs of Brazilian exchanges, normalize the quotes in BRL, and save them to the database.
+            -  **Cache (Redis)**: When accessing the endpoint to fetch the latest BTC price across all exchanges, the backend first attempts Redis; if there is valid cache, it returns with low latency; otherwise, it queries the database, saves to Redis, and returns.
+            -  **REST API**: Endpoints for listing prices by crypto/exchange and managing alerts (create, list, remove).
+
+
+            ## Publication
+              - [Play Store](https://play.google.com/store/apps/details?id=com.marquestech.valorbitcoin)
+              - [App Store](https://apps.apple.com/us/app/valor-bitcoin/id6742030570)
+              - [Source Code](https://github.com/gustavohnmarques/valor-do-bitcoin-app-rebuild)
+
+        `,
+        image: "/projects/valorBitcoin/valor-bitcoin-capa.webp",
+        techStack: ["React Native", "ExpressJS", "OneSignal", "Redis"],
+        gallery: [
+          {
+            src: "https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/d157a161a04452b37492cddaa283e5f6/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2Fd157a161a04452b37492cddaa283e5f6%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600",
+            type: "video",
+          },
+          { src: "/projects/valorBitcoin/imagem1.webp", type: "image" },
+          { src: "/projects/valorBitcoin/imagem2.webp", type: "image" },
+          { src: "/projects/valorBitcoin/imagem3.webp", type: "image" },
+          { src: "/projects/valorBitcoin/imagem4.webp", type: "image" },
+        ],
+        developedFor: "Personal Project",
+      },
+    ],
+  },
   footer: {
     title: "Let's talk?",
     subtitle:

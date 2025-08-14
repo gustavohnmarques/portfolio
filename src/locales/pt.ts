@@ -36,7 +36,8 @@ export const pt = {
   },
   projects: {
     title: "Aplicações entregues para uso comercial",
-    description: "Esses são projetos reais desenvolvidos sob medida para empresas e parceiros, com foco em atender necessidades específicas e entregar valor com tecnologia.",
+    description:
+      "Esses são projetos reais desenvolvidos sob medida para empresas e parceiros, com foco em atender necessidades específicas e entregar valor com tecnologia.",
     projects: [
       {
         id: "integramente",
@@ -184,7 +185,12 @@ export const pt = {
             - **Outros**: Axios, Moment.js, React Native Permissions
         `,
         image: "/projects/populacao/populacao-capa.webp",
-        techStack: ["React Native", "OneSignal", "react-native-vision-camera", 'SQLite'],
+        techStack: [
+          "React Native",
+          "OneSignal",
+          "react-native-vision-camera",
+          "SQLite",
+        ],
         gallery: [
           {
             src: "https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/5a7869e8a17e778307861bb5ed519d32/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F5a7869e8a17e778307861bb5ed519d32%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%23258757",
@@ -231,7 +237,12 @@ export const pt = {
             - **Outros**: Axios, Moment.js, React Native Permissions
         `,
         image: "/projects/gestao/gestao-capa.webp",
-        techStack: ["React Native", "OneSignal", "react-native-vision-camera", 'SQLite'],
+        techStack: [
+          "React Native",
+          "OneSignal",
+          "react-native-vision-camera",
+          "SQLite",
+        ],
         gallery: [
           {
             src: "https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/96c3a7b76882494e0b8cde53c003294e/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2F96c3a7b76882494e0b8cde53c003294e%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%232a507a",
@@ -418,6 +429,62 @@ export const pt = {
           { src: "/projects/wayservice/imagem7.webp", type: "image" },
         ],
         developedFor: "Desenvolvido para: Grupo Sifat",
+      },
+    ],
+  },
+  personalProjects: {
+    title: "Projetos pessoais",
+    projects: [
+      {
+        id: "valorBitcoin",
+        title: "Valor do Bitcoin",
+        description:
+          "Acompanhe o valor do Bitcoin e de mais de 100 criptomoedas em tempo quase real nas principais corretoras brasileiras...",
+        detailDescription: dedent`
+            Acompanhe o valor do Bitcoin e de mais de 100 criptomoedas em tempo quase real nas principais corretoras brasileiras (ex.: Brasil Bitcoin, Bitnuvem, NovaDAX, OKX, Ripio, Coinext, Mercado Bitcoin, Bitget). O app consolida preços em BRL, volume e horário da última atualização em um único lugar, permitindo comparar rapidamente onde está o melhor preço para comprar ou vender. Além disso, oferece alertas personalizáveis por preço ou variação percentual, com a opção de escolher em quais corretoras o alerta deve ser monitorado.
+
+            ## Características principais:
+
+            - Agregador multi-corretora: consulta e exibe cotações por exchange, com preço, volume e tempo da última atualização.
+            - Alertas inteligentes: crie alertas por preço-alvo ou % de variação (subir/cair) e selecione exatamente quais corretoras devem acionar o alerta.
+            - Notificações push quando um alerta é atingido.        
+
+            ## Tecnologias utilizadas:
+
+            - **Framework**: React Native 
+            - **Navegação**: react-navigation
+            - **Armazenamento local**:  react-native-mmkv
+            - **Formulários & validação**: react-hook-form, yup
+            - **Notificações**: react-native-onesignal  
+            - **Outros**: react-native-vector-icons, react-native-bootsplash, @react-native-community/checkbox
+
+            ## Backend e arquitetura
+
+            -  **Framework**: Node.js + Express com Redis para cache e banco relacional para persistência.
+            -  **Coleta de dados**: Jobs consultam periodicamente as APIs das corretoras brasileiras, normalizam as cotações em BRL e salvam no banco.
+            -  **Cache (Redis)**: Ao acessar o endpoint de buscar o último preço do BTC em todas as corretoras, o backend primeiro tenta o Redis, se houver cache válido, retorna em baixa latência, senão, consulta o banco, grava no Redis e responde.
+            -  **API REST**: Endpoints para listagem de preços por cripto/exchange e gestão de alertas (criar, listar, remover).
+
+
+            ## Publicação              
+              - Link para playstore: [Play Store](https://play.google.com/store/apps/details?id=com.marquestech.valorbitcoin)
+              - Link para appstore: [App Store](https://apps.apple.com/us/app/valor-bitcoin/id6742030570)
+              - Link para codigo fonte: [Código Fonte](https://github.com/gustavohnmarques/valor-do-bitcoin-app-rebuild)
+
+        `,
+        image: "/projects/valorBitcoin/valor-bitcoin-capa.webp",
+        techStack: ["React Native", "ExpressJS", "OneSignal", "Redis"],
+        gallery: [
+          {
+            src: "https://customer-iq3i0rogrtkv4z32.cloudflarestream.com/d157a161a04452b37492cddaa283e5f6/iframe?poster=https%3A%2F%2Fcustomer-iq3i0rogrtkv4z32.cloudflarestream.com%2Fd157a161a04452b37492cddaa283e5f6%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600",
+            type: "video",
+          },
+          { src: "/projects/valorBitcoin/imagem1.webp", type: "image" },
+          { src: "/projects/valorBitcoin/imagem2.webp", type: "image" },
+          { src: "/projects/valorBitcoin/imagem3.webp", type: "image" },
+          { src: "/projects/valorBitcoin/imagem4.webp", type: "image" },
+        ],
+        developedFor: "Projeto pessoal",
       },
     ],
   },

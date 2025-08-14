@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
 export const MotionContainer = styled(motion.div)`
-    padding: 6rem 5% 2rem 5%;
+    padding: 0 5% 6rem 5%;
     background-color: rgb(15, 23, 42);
     position: relative;
 `
@@ -10,7 +10,7 @@ export const MotionContainer = styled(motion.div)`
 export const Title = styled(motion.h2)`
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 `
 
 export const Description = styled.p`
@@ -39,8 +39,12 @@ export const ProjectCard = styled(motion.div)`
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    max-width: calc(34.1% - 2rem);
 
-    
+    @media (max-width: 1082px) {
+        max-width: 100%;
+    }
+
     h3 {
         padding: 1.5rem 1.5rem 0.5rem;
         font-size: 1.5rem;
